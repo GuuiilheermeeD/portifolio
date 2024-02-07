@@ -12,7 +12,6 @@
     --fonte-secundaria: 'Montserrat' sans-serif;
 }
 
-
 * {
     margin: 0;
     padding: 0;
@@ -32,7 +31,7 @@ body {
 }
 .cabecalho__menu__link{
     font-family: var(--fonte-secundaria);
-    font-size: 1.5rem;
+    font-size: 1.37rem;
     font-weight: 600;
     color: var(--cor-final);
     text-decoration: none;
@@ -54,7 +53,7 @@ body {
 }
 
 .apresentacao__conteudo__titulo {
-    font-size: 2.25rem;
+    font-size: 1,25rem;
     font-family: var(--fonte-primaria);
     color: var(--cor-titulo-principal);
 }
@@ -63,7 +62,7 @@ body {
     color: var(--cor-final);
 }
 .apresentacao__conteudo__texto {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     font-family: var(--fonte-secundaria);
 }
 
