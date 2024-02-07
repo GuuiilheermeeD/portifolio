@@ -125,6 +125,12 @@ body {
     }
     .cabecalho__menu{
         justify-content: center;
+        gap: 20px;
+    }
+    .cabecalho__menu__link{
+        border-left: var(--cor-final) solid 1px ;
+        border-right: var(--cor-final) solid 1px ;
+        padding: 5px;
     }
     .apresentacao{
         flex-direction: column-reverse;
