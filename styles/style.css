@@ -131,6 +131,7 @@ body {
         border-left: var(--cor-final) solid 1px ;
         border-right: var(--cor-final) solid 1px ;
         padding: 5px;
+        text-justify: auto;
     }
     .apresentacao{
         flex-direction: column-reverse;
