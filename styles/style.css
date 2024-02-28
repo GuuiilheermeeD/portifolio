@@ -7,9 +7,11 @@
     --cor-hover: #005B41;
     --cor-final: #00b3ff;
     --cor-titulo-principal: #8fd8f7;
+    --cor-link: #771fc9;
 
     --fonte-primaria: 'korona one', sans-serif;
     --fonte-secundaria: 'Montserrat' sans-serif;
+    font-size: 1.25em;
 }
 
 * {
@@ -25,6 +27,7 @@ body {
 
 .cabecalho {
     padding: 2% 0% 0% 15%;
+    text-align: center;
 }
 
 .cabecalho__menu {
@@ -34,7 +37,7 @@ body {
 
 .cabecalho__menu__link {
     font-family: var(--fonte-secundaria);
-    font-size: 1.37rem;
+    font-size: 1.5em;
     font-weight: 600;
     color: var(--cor-final);
     text-decoration: none;
@@ -56,9 +59,12 @@ body {
 }
 
 .apresentacao__conteudo__titulo {
-    font-size: 1, 25rem;
     font-family: var(--fonte-primaria);
     color: var(--cor-titulo-principal);
+}
+
+.titulo_dois {
+    margin-bottom: 1em;
 }
 
 .titulo-destaque {
@@ -66,7 +72,7 @@ body {
 }
 
 .apresentacao__conteudo__texto {
-    font-size: 1.1rem;
+
     font-family: var(--fonte-secundaria);
     text-decoration: none;
     color: var(--color-secundaria);
@@ -76,24 +82,27 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
     gap: 32px;
+    align-items: center;
 }
 
 .apresentacao__links_subtitulo {
     font-family: var(--fonte-primaria);
     font-weight: 400;
-    font-size: 24px;
+    font-size: 1.5em;
 }
 
 .apresentacao__links__navegacao {
     display: flex;
+    align-items: center;
     justify-content: center;
-    gap: 16px;
-    width: 50%;
+    gap: 0.9em;
+    /* espaçamento da imagem ao texto */
+    width: 55%;
+    /* tamanho da DIV */
     text-align: center;
     border-radius: 8px;
-    font-size: 1.5rem;
+    font-size: 1em;
     font-weight: 600;
     padding: 21.5px 0;
     text-decoration: none;
@@ -107,7 +116,7 @@ body {
 }
 
 .apresentacao__imagem {
-    width: 50%;
+    width: 40%;
 }
 
 .rodape {
@@ -127,17 +136,22 @@ body {
 }
 
 .projetos {
-    font-size: 18px;
+    font-size: 1em;
     font-weight: 700;
     border: 1px solid var(--cor-final);
     border-radius: 50px;
     padding: 0.5em;
     width: max-content;
-    margin: 5px;
+    margin: 0.5em 0;
 }
 
-a:hover {
-    color: #771fc9;
+.certificado_link:hover {
+    color: var(--cor-link);
+}
+
+.lista {
+    margin: 0.5em 0;
+    display: block;
 }
 
 @media (max-width:1200px) {
