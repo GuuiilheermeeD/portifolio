@@ -44,7 +44,7 @@ body {
 }
 
 .apresentacao {
-    padding: 8vw 15vw;
+    padding: 10vw 6vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -52,7 +52,7 @@ body {
 }
 
 .apresentacao__conteudo {
-    width: 50%;
+    /* width: 50%; */
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -72,7 +72,6 @@ body {
 }
 
 .apresentacao__conteudo__texto {
-
     font-family: var(--fonte-secundaria);
     text-decoration: none;
     color: var(--color-secundaria);
