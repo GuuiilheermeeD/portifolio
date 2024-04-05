@@ -26,8 +26,11 @@ body {
 }
 
 .cabecalho {
-    padding: 2% 0% 0% 15%;
+    padding: 2% 0;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .cabecalho__menu {
@@ -54,6 +57,9 @@ body {
 .apresentacao__conteudo {
     /* width: 50%; */
     display: flex;
+    /* text-align: center; */
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     gap: 40px;
 }
@@ -134,14 +140,6 @@ body {
     color: var(--cor-titulo-principal);
 }
 
-.projetos {
-    font-weight: 700;
-    border: 1px solid var(--cor-final);
-    border-radius: 50px;
-    padding: 0.5em;
-    width: max-content;
-    margin: 0.5em 0;
-}
 
 .certificado_link:hover {
     color: var(--cor-link);
@@ -150,6 +148,20 @@ body {
 .lista {
     margin: 0.5em 0;
     display: block;
+}
+
+.projetos, .link_externo{
+    font-weight: 700;
+    border: 1px solid var(--cor-final);
+    border-radius: 50px;
+    padding: 0.5em;
+    width: max-content;
+    margin: 0.5em 0;
+}
+
+.link_externo:hover, .projetos:hover{
+    background-color: var(--color-secundaria);
+    color: var(--cor-link);
 }
 
 @media (max-width:1200px) {
