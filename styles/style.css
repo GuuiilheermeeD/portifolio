@@ -180,7 +180,7 @@ body {
     .cabecalho__menu__link {
         border-left: var(--cor-final) solid 1px;
         border-right: var(--cor-final) solid 1px;
-        padding: 5px;
+        padding: 5px 15px;
         text-justify: auto;
     }
 
