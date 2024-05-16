@@ -36,14 +36,24 @@ body {
 .cabecalho__menu {
     display: flex;
     width: 35%;
-    justify-content: space-between;
+    justify-content: space-around;
+align-items: center;
 }
 
 .cabecalho__menu__link {
+
+    width: 25%;
     font-family: var(--fonte-secundaria);
     font-weight: 600;
     color: var(--cor-final);
     text-decoration: none;
+}
+
+.cabecalho__menu__link:hover {
+    width: 25%;
+    border-radius: 25px;
+    background-color: #1d1c1c;
+    color: var(--cor-link);
 }
 
 .apresentacao {
@@ -77,10 +87,26 @@ body {
     color: var(--cor-final);
 }
 
-.apresentacao__conteudo__texto {
-    font-family: var(--fonte-secundaria);
-    text-decoration: none;
-    color: var(--color-secundaria);
+.apresentacao__conteudo__texto{
+    display: flex;
+    text-align: center;
+    font-weight: 700;
+
+    flex-wrap: wrap;
+    
+}
+
+.projetos {
+    border: 1px solid var(--cor-final);
+    border-radius: 25px;
+    margin: 5px;
+    padding: 10px 20px ;
+   
+}
+
+.projetos:hover {
+    background-color: var(--color-secundaria);
+    color: var(--cor-link);
 }
 
 .apresentacao__links {
@@ -135,7 +161,7 @@ body {
     font-weight: 400;
 }
 
-.certificado_link {
+.certificado_link, a{
     text-decoration: none;
     color: var(--cor-titulo-principal);
 }
@@ -150,24 +176,11 @@ body {
     display: block;
 }
 
-.projetos, .link_externo{
-    font-weight: 700;
-    border: 1px solid var(--cor-final);
-    border-radius: 50px;
-    padding: 0.5em;
-    width: max-content;
-    margin: 0.5em 0;
-}
-
-.link_externo:hover, .projetos:hover{
-    background-color: var(--color-secundaria);
-    color: var(--cor-link);
-}
-
 @media (max-width:1200px) {
-    main{
+    main {
         font-size: 1em;
     }
+
     .cabecalho {
         padding: 10%;
     }
@@ -178,10 +191,11 @@ body {
     }
 
     .cabecalho__menu__link {
-        border-left: var(--cor-final) solid 1px;
-        border-right: var(--cor-final) solid 1px;
         padding: 5px 15px;
         text-justify: auto;
+    }
+    .cabecalho__menu__link:hover {
+        background-color: var(--color-primaria);
     }
 
     .apresentacao {
