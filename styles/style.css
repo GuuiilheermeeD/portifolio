@@ -260,6 +260,9 @@ a {
     .certificado_link_pc {
         display: none;
     }
-
+    
+    .certificado_link_celular {
+        display: block;
+    }
 
 }
