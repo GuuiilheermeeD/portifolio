@@ -79,6 +79,10 @@ align-items: center;
     color: var(--cor-titulo-principal);
 }
 
+.link_externo{
+    margin: 20px;
+}
+
 .titulo_dois {
     margin-bottom: 1em;
 }
@@ -175,7 +179,30 @@ align-items: center;
     margin: 0.5em 0;
     display: block;
 }
+.carrosel {
+    width: auto;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
 
+}
+
+.card img {
+    width: 350px;
+    padding: 5px;
+    margin: 5px;
+    flex: 1;
+    cursor: pointer;
+}
+
+.card img:hover {
+    width: 500px;
+    text-align: center;
+    margin: auto;
+    padding: 1px;
+    background-color: #ff0000;
+    flex: 1;
+}
 @media (max-width:1200px) {
     main {
         font-size: 1em;
