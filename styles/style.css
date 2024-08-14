@@ -75,10 +75,12 @@ body {
 }
 
 .apresentacao__conteudo__titulo {
+    display: flex;
+    justify-content: center;
+
     font-family: var(--fonte-primaria);
     color: var(--cor-titulo-principal);
 }
-
 .link_externo {
     margin: 20px;
 }
