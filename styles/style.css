@@ -3,14 +3,12 @@
 :root {
   --color-primaria: #1b1c1d;
   --color-secundaria: #F5E8C7;
-  --cor-terciaria: #465267;
-  --cor-final: #00b3ff;
-  --cor-titulo-principal: #8fd8f7;
+  --cor-titulo: #00b3ff;
   --cor-hover: #095322;
   --cor-link: #771fc9;
+  --cor-link_cursando: #e70b0b;
 
-  --fonte-primaria: 'korona one', sans-serif;
-  --fonte-secundaria: 'Montserrat' sans-serif;
+  --fonte-primaria: 'Montserrat';
   font-size: 1.2em;
 }
 
@@ -23,6 +21,9 @@ body {
   box-sizing: border-box;
   background-color: var(--color-primaria);
   color: var(--color-secundaria);
+  display: flex;
+  flex-direction: column;
+  place-items: center;
 }
 
 .menu {
@@ -33,7 +34,6 @@ body {
   display: grid;
   place-items: center;
   align-content: center;
-  font-family: var(--fonte-secundaria);
 }
 
 .tabs {
@@ -50,6 +50,7 @@ body {
 }
 
 .tab-btn {
+  font-family: var(--fonte-primaria);
   place-content: center;
   padding: 0 clamp(10px, 10px + 10px, 20px);
   cursor: pointer;
@@ -87,51 +88,150 @@ body {
 
 
 .apresentacao {
-  background-color: #000000;
+  width: 70%;
+  background-color: black;
   border-radius: 50px;
   display: flex;
-  padding: 50px;
-  margin: 25px;
+  padding: 15px;
+  margin: 5px;
   font-family: var(--fonte-primaria);
 }
 
 .titulo-destaque {
-  color: var(--cor-final);
-  
+  color: var(--cor-titulo);
+
 }
+
 .apresentacao__conteudo {
   align-content: center;
 }
 
-#caixa__texto{
+#caixa__texto {
   text-align: center;
-  margin: 50px;
+  margin: 40px;
+}
+
+.conteudo {
+  padding: 50px;
+}
+
+.titulo {
+  text-align: center;
+  font-family: var(--fonte-primaria);
+  margin: 10px 10px 25px 10px;
 }
 
 .apresentacao__conteudo__titulo {
-  margin: 0 10px 50px 0px;
-  font-family: var(--fonte-secundaria);
+  font-family: var(--fonte-primaria);
 }
 
+.certificado_link_pc {
+  display: flex;
+  justify-content: center;
+}
 
-.apresentacao .apresentacao__imagem{
+.link_externo {
+  width: max-content;
+  padding: 15px;
+  list-style: none;
+  border: 1px solid var(--cor-hover);
+  border-radius: 25px;
+  color: var(--color-secundaria);
+  background: var(--color-primaria);
+}
+
+.certificado_link_celular {
+  display: none;
+}
+
+.link_externo:hover {
+  background: var(--cor-hover);
+}
+
+.apresentacao__conteudo__texto,
+a {
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.apresentacao__conteudo__projetos {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 5px;
+}
+
+.projetos {
+  width: auto;
+  color: var(--color-secundaria);
+  margin: 10px;
+  border: 1px solid var(--cor-hover);
+  padding: 15px;
+  border-radius: 25px;
+  background: var(--color-primaria);
+}
+
+.projetos:hover {
+  color: var(--color-secundaria);
+  background: var(--cor-hover);
+}
+
+.apresentacao .apresentacao__imagem {
   margin: 25px;
   width: 50%;
 }
 
-footer{
-  justify-items: center;
-  position: fixed;
-  padding: 10px;
-  left: 0;
-  bottom: 0;
+.apresentacao__curriculo {
+  text-align: center;
+  padding: 0px;
+}
+
+.lista,
+li {
+  text-align: justify;
+  list-style: none;
+}
+
+.lista .certificado_link {
+  text-decoration: none;
+  color: var(--cor-link);
+}
+
+.lista .certificado_link:hover {
+  color: var(--cor-hover);
+}
+
+.lista .certificado_link_cursando {
+  text-decoration: none;
+  color: var(--cor-link_cursando);
+}
+
+.carrosel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.card img {
+  width: 270px;
+  padding: 0;
+}
+
+.card img:hover {
+  transition: 400ms;
+  width: 276px;
+  box-shadow: 5px 5px 5px var(--cor-hover);
+}
+
+
+footer {
+  padding: 0 0 5px;
   width: 100%;
   text-align: center;
 }
 
 /* From Uiverse.io by elisapi */
 .card {
-  background: #005B41;
   width: auto;
   height: fit-content;
   background-color: transparent;
@@ -191,6 +291,10 @@ footer{
 
 .socialContainer:hover .socialSvg {
   animation: slide-in-top 0.3s both;
+}
+
+.hidden {
+  display: none;
 }
 
 @keyframes slide-in-top {
