@@ -210,7 +210,8 @@ li {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-}
+    place-content: center;
+  }
 
 .card img {
   width: 270px;
@@ -313,8 +314,16 @@ footer {
   }
 
   .lista,
-  li {
+  li, .apresentacao__conteudo {
     text-align: start;
+  }
+
+  .titulo , .apresentacao__conteudo__texto, .apresentacao__conteudo, li, .tab-btn {
+    font-size: 0.8rem;
+    
+  }
+  .card img {
+    width: 280px;
   }
   
 }
