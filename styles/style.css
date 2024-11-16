@@ -297,6 +297,28 @@ footer {
   display: none;
 }
 
+/* Para Tablets */
+@media (max-width: 1320px) {
+  .apresentacao {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .apresentacao__imagem img {
+    display: none;
+  }
+
+  .apresentacao__conteudo__projetos {
+    flex-wrap: wrap;
+  }
+
+  .lista,
+  li {
+    text-align: start;
+  }
+  
+}
+
 @keyframes slide-in-top {
   0% {
     transform: translateY(-50px);
