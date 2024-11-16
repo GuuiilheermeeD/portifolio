@@ -379,3 +379,16 @@ tabs.forEach((tab, index) => {
     updateContent(tab.getAttribute("data-index"));
   });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  // Define a aba inicial como "Principal"
+  const defaultTab = tabs[0]; // Primeiro botão (Principal)
+  defaultTab.classList.add("active");
+  
+  // Posiciona o destaque no botão "Principal"
+  highlight.style.transform = `translateX(0%)`;
+  
+  // Atualiza o conteúdo com base no índice da aba inicial
+  updateContent(defaultTab.getAttribute("data-index"));
+});
+
